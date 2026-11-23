@@ -31,7 +31,6 @@ public class BodegaService {
         return mapper.map(guardada, BodegaDto.class);
     }
 
-    // los productos son LAZY, se necesita la transaccion abierta para leerlos al mapear
     @Transactional(readOnly = true)
     public List<BodegaDto> listar() {
         return bodegaRepository.findAll()

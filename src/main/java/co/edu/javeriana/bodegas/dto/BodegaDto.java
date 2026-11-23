@@ -23,7 +23,6 @@ public class BodegaDto {
     @NotBlank(message = "La ubicación es obligatoria")
     private String ubicacion;
 
-    // el producto no trae la bodega, asi no hay referencia circular
     private List<ProductoDto> productos = new ArrayList<>();
 
 }
