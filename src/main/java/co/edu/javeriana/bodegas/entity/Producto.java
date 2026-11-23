@@ -1,5 +1,7 @@
 package co.edu.javeriana.bodegas.entity;
 
+import java.math.BigDecimal;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -27,7 +29,7 @@ public class Producto {
 
     private String descripcion;
 
-    private Double precio;
+    private BigDecimal precio;
 
     private Integer cantidad;
 
